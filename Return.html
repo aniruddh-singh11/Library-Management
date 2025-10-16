@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Return Books</title>
+    <link rel="stylesheet" href="styles/Return.css">
+</head>
+<body>
+    <div class="overlay"></div>
+
+    <div class="navbar">
+        <div class="nav-left">
+            <div class="portal-name">Library Portal</div>
+            <ul class="nav-links">
+                <li><a href="Browse.html">Browse</a></li>
+                <li><a href="Fines.html">Fines</a></li>
+                <li><a href="History.html">History</a></li>
+                <li><a href="Return.html">Return</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <a href="LoginStudent.html" class="logout">Logout</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <h2>Return Borrowed Books</h2>
+        <div id="message" class="message-area"></div>
+
+        <div class="book-details">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Book Title</th>
+                        <th>ISBN</th>
+                        <th>Copy Number</th>
+                        <th>Borrow Date</th>
+                        <th>Return Date</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="return-body">
+                    <!-- Book rows will be populated here dynamically -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="scripts/Return.js"></script>
+</body>
+</html>

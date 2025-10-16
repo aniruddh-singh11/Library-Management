@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Portal - Browse</title>
+    <link rel="stylesheet" href="styles/Browse.css">
+</head>
+<body>
+    <div class="overlay"></div>
+    <nav class="navbar">
+        <div class="nav-left">
+            <span class="portal-name">Library Portal</span>
+            <ul class="nav-links">
+                <li><a href="Browse.html">Browse</a></li>
+                <li><a href="Fines.html">Fines</a></li>
+                <li><a href="History.html">History</a></li>
+                <li><a href="Return.html">Return</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <a href="LoginStudent.html" class="logout">Logout</a>
+        </div>
+    </nav>
+    
+    <div class="content">
+        <h2>What book are you looking for?</h2>
+        <input type="text" id="book-search" placeholder="Enter book name here...">
+        <p id="borrow-message" class="borrow-message"></p>
+
+        <div class="book-details">
+            <h3>Available Books</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Book Name</th>
+                        <th>ISBN</th>
+                        <th>Author</th>
+                        <th>Category</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="book-list">
+                    <!-- Dynamic book entries will be displayed here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="scripts/Browse.js"></script>
+</body>
+</html>

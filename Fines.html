@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Portal - Fines</title>
+    <link rel="stylesheet" href="styles/Fines.css">
+</head>
+<body>
+    <div class="overlay"></div>
+    <nav class="navbar">
+        <div class="nav-left">
+            <span class="portal-name">Library Portal</span>
+            <ul class="nav-links">
+                <li><a href="Browse.html">Browse</a></li>
+                <li><a href="Fines.html">Fines</a></li>
+                <li><a href="History.html">History</a></li>
+                <li><a href="Return.html">Return</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <a href="LoginStudent.html" class="logout">Logout</a>
+        </div>
+    </nav>
+
+    <div class="content">
+        <h2>User Fine Details</h2>
+
+        <div id="student-info" style="margin-top: 30px; font-size: 18px;">
+            <!-- Student info will be dynamically populated here -->
+        </div>
+
+        <div class="book-details" style="margin-top: 40px;">
+            <h3>Fine Records</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Staff Name</th>
+                        <th>Amount</th>
+                        <th>Reason</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="fine-table-body">
+                    <!-- Fine records will be dynamically populated here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="scripts/Fines.js"></script>
+</body>
+</html>

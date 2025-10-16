@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Portal - Give Fine</title>
+    <link rel="stylesheet" href="styles/GiveFine.css">
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="navbar">
+        <div class="nav-left">
+            <span class="portal-name">Library Portal</span>
+            <ul class="nav-links">
+                <li><a href="GiveFine.html">Give Fine</a></li>
+                <li><a href="AddBook.html">Add Book</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <a href="LoginStaff.html" class="logout">Logout</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <h2>Issue Fine</h2>
+
+        <form id="issueFineForm">
+            <div class="input-group">
+                <label for="reg_no">Student Registration Number:</label>
+                <input type="text" id="reg_no" name="reg_no" placeholder="Enter Registration Number">
+            </div>
+            <div class="input-group">
+                <label for="reason">Reason for Fine:</label>
+                <select id="reason" name="reason">
+                    <option value="" disabled selected>Select a reason</option>
+                </select>
+            </div>
+            <button type="submit">Issue Fine</button>
+            <p id="fineMessage" class="status-message"></p>
+        </form>
+
+        <h3>Students Currently Borrowing Books</h3>
+        <div class="student-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Reg No</th>
+                        <th>Name</th>
+                        <th>Book Name</th>
+                        <th>Borrow Date</th>
+                        <th>Return Date</th>
+                    </tr>
+                </thead>
+                <tbody id="studentTableBody">
+                    <!-- Data will be populated here dynamically -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="scripts/GiveFine.js"></script>
+</body>
+</html>

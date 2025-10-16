@@ -1,0 +1,179 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=1500&q=80') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(to right, #002147, #004080);
+    padding: 20px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 80px;
+    z-index: 2;
+    border: 2px solid #003366;
+    box-sizing: border-box;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.portal-name {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    margin-right: 30px;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.nav-right {
+    margin-left: auto;
+    margin-right: 30px;
+}
+
+.logout {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    background-color: #cc0000;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.logout:hover {
+    background-color: #990000;
+}
+
+.content {
+    text-align: center;
+    padding-top: 120px;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+#book-search {
+    padding: 10px;
+    margin: 20px 0 10px;
+    font-size: 16px;
+    width: 50%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+#borrow-button {
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#borrow-button:hover {
+    background-color: #218838;
+}
+
+.status-message {
+    margin-top: 12px;
+    font-size: 16px;
+    color: white;
+}
+
+.book-details {
+    margin-top: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.book-details table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    color: #333;
+}
+
+.book-details th, .book-details td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.book-details th {
+    background-color: #002147;
+    color: white;
+}
+
+.book-details td {
+    text-align: left;
+}
+.borrow-row-btn {
+    background-color: #007bff;
+    color: white;
+    font-size: 14px;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.borrow-row-btn:hover {
+    background-color: #0056b3;
+}
+
+.borrow-message {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
